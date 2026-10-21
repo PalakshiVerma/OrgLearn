@@ -100,15 +100,15 @@
 
 **Goal:** Build the interactive multi-page Streamlit application consuming the FastAPI backend.
 
-- [ ] Implement `frontend/api_client.py` handling all HTTP requests with Bearer JWT tokens.
-- [ ] Implement `frontend/state.py` for managing session state, token persistence, and role guards.
-- [ ] Create `frontend/app.py` (Login / Register view).
-- [ ] Create `frontend/pages/1_Select_Org.py` (select active organization or create a new one).
-- [ ] Create `frontend/pages/2_Dashboard.py` (role-tailored dashboard with quick links and statistics).
-- [ ] Create `frontend/pages/3_Courses.py` (course catalog, lesson viewer, course/lesson creation modal for instructors/admins).
-- [ ] Create `frontend/pages/4_My_Learning.py` (learner enrollments, lesson progress, completion checkboxes).
-- [ ] Create `frontend/pages/5_Members.py` (admin member management, role assignment).
-- [ ] Add global sidebar navigation with user profile, active org badge, "Switch Organization", and "Logout".
+- [x] Implement `frontend/api_client.py` handling all HTTP requests with Bearer JWT tokens.
+- [x] Implement `frontend/state.py` for managing session state, token persistence, and role guards.
+- [x] Create `frontend/app.py` (Login / Register view).
+- [x] Create `frontend/pages/1_Select_Org.py` (select active organization or create a new one).
+- [x] Create `frontend/pages/2_Dashboard.py` (role-tailored dashboard with quick links and statistics).
+- [x] Create `frontend/pages/3_Courses.py` (course catalog, lesson viewer, course/lesson creation modal for instructors/admins).
+- [x] Create `frontend/pages/4_My_Learning.py` (learner enrollments, lesson progress, completion checkboxes).
+- [x] Create `frontend/pages/5_Members.py` (admin member management, role assignment).
+- [x] Add global sidebar navigation with user profile, active org badge, "Switch Organization", and "Logout".
 
 **Exit criteria:** Users can navigate the complete lifecycle from the Streamlit UI without encountering errors.
 
