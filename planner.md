@@ -74,23 +74,23 @@
 
 **Goal:** Implement course authoring, lesson management, enrollment, and progress tracking with strict RBAC and tenant isolation.
 
-- [ ] Implement `backend/app/routers/courses.py`:
+- [x] Implement `backend/app/routers/courses.py`:
   - `GET /courses` (learners see published courses; instructors/admins see draft courses per permissions)
   - `POST /courses` (admin or instructor)
   - `GET /courses/{id}`
   - `PATCH /courses/{id}` (admin or course instructor)
   - `DELETE /courses/{id}` (admin or course instructor)
-- [ ] Implement `backend/app/routers/lessons.py`:
+- [x] Implement `backend/app/routers/lessons.py`:
   - `POST /courses/{id}/lessons`
   - `PATCH /lessons/{id}`
   - `DELETE /lessons/{id}`
-- [ ] Implement `backend/app/routers/enrollments.py`:
+- [x] Implement `backend/app/routers/enrollments.py`:
   - `POST /courses/{id}/enroll`
   - `DELETE /courses/{id}/enroll`
   - `GET /me/learning` (enrolled courses with progress percentage)
   - `POST /lessons/{id}/complete`
   - `GET /courses/{id}/enrollments` (admin or course instructor)
-- [ ] Write automated tests proving strict cross-organization data isolation.
+- [x] Write automated tests proving strict cross-organization data isolation.
 
 **Exit criteria:** Full REST API operational with automated tests proving 100% tenant isolation and RBAC rules.
 
