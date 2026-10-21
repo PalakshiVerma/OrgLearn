@@ -54,17 +54,17 @@
 
 **Goal:** Build and verify user registration, login, org creation, and org selection (two-step token flow).
 
-- [ ] Implement `POST /auth/register` (unique email, hashed password).
-- [ ] Implement `POST /auth/login` (returns user token and organization list).
-- [ ] Implement `POST /auth/select-org` (validates membership, returns scoped org token).
-- [ ] Implement `GET /me` (returns current user and active org details).
-- [ ] Implement `POST /orgs` (creates new organization and assigns creator as admin).
-- [ ] Implement `backend/app/routers/members.py`:
+- [x] Implement `POST /auth/register` (unique email, hashed password).
+- [x] Implement `POST /auth/login` (returns user token and organization list).
+- [x] Implement `POST /auth/select-org` (validates membership, returns scoped org token).
+- [x] Implement `GET /me` (returns current user and active org details).
+- [x] Implement `POST /orgs` (creates new organization and assigns creator as admin).
+- [x] Implement `backend/app/routers/members.py`:
   - `GET /members` (admin only: list org members)
   - `POST /members` (admin only: add user by email with role)
   - `PATCH /members/{user_id}` (admin only: update role, enforce last-admin rule)
   - `DELETE /members/{user_id}` (admin only: remove member, enforce last-admin rule)
-- [ ] Write automated pytest suite for auth, org selection, and member management.
+- [x] Write automated pytest suite for auth, org selection, and member management.
 
 **Exit criteria:** Users can register, log in, create/switch orgs, and admins can manage members while protecting the last admin.
 
