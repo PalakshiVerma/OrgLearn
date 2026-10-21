@@ -28,9 +28,9 @@
 
 **Goal:** Implement database models, connection session, configuration settings, and core security utilities.
 
-- [ ] Set up `backend/app/core/config.py` using `pydantic-settings`.
-- [ ] Set up `backend/app/db/session.py` with SQLite connection (`PRAGMA foreign_keys = ON`, `check_same_thread=False`).
-- [ ] Implement SQLAlchemy 2.0 models in `backend/app/models/`:
+- [x] Set up `backend/app/core/config.py` using `pydantic-settings`.
+- [x] Set up `backend/app/db/session.py` with SQLite connection (`PRAGMA foreign_keys = ON`, `check_same_thread=False`).
+- [x] Implement SQLAlchemy 2.0 models in `backend/app/models/`:
   - `User` (`users`)
   - `Organization` (`organizations`)
   - `Membership` (`memberships` with role `admin`, `instructor`, `learner`)
@@ -38,10 +38,10 @@
   - `Lesson` (`lessons`)
   - `Enrollment` (`enrollments`)
   - `LessonProgress` (`lesson_progress`)
-- [ ] Implement database initialization script / helper to create tables.
-- [ ] Implement password hashing and verification in `backend/app/core/security.py`.
-- [ ] Implement JWT token generation and verification for user token and org token.
-- [ ] Build dependency injection in `backend/app/core/deps.py`:
+- [x] Implement database initialization script / helper to create tables.
+- [x] Implement password hashing and verification in `backend/app/core/security.py`.
+- [x] Implement JWT token generation and verification for user token and org token.
+- [x] Build dependency injection in `backend/app/core/deps.py`:
   - `get_db`
   - `get_current_user`
   - `get_current_org_member` / `require_role(...)`
