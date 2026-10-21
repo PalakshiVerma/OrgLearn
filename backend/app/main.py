@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend.app.core.config import settings
 from backend.app.db.init_db import init_db
-from backend.app.routers import auth, orgs, members
+from backend.app.routers import auth, orgs, members, courses, lessons, enrollments
 
 from contextlib import asynccontextmanager
 
@@ -34,6 +34,9 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(orgs.router)
 app.include_router(members.router)
+app.include_router(courses.router)
+app.include_router(lessons.router)
+app.include_router(enrollments.router)
 
 
 @app.get("/health", tags=["system"])
